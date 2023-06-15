@@ -1,0 +1,9 @@
+/* Home.module.css */
+.home__text-container h1 {
+    color: red; /* Example style for the h1 tag */
+    font-size: 50px;
+  }
+  
+  .home__text-container p {
+    font-size: 18px; /* Example style for the p tag */
+  }

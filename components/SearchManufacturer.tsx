@@ -9,7 +9,7 @@ const SearchManufacturer = ({
   selected,
   setSelected,
 }: SearchManuFacturerProps) => {
-  const [query, setQuery] = useState(""); // State for storing the search query
+  const [query, setQuery] = useState(''); // State for storing the search query
 
   // Filter the manufacturers based on the search query
   const filteredManufacturers =
@@ -58,12 +58,12 @@ const SearchManufacturer = ({
           >
             <Combobox.Options className='search-manufacturer__options' static>
               {/* If there are no filtered manufacturers and the query is not empty, show an option to create a new manufacturer */}
-              {filteredManufacturers.length === 0 && query !== "" ? (
+              {filteredManufacturers.length === 0 && query !== '' ? (
                 <Combobox.Option
                   value={query}
                   className='search-manufacturer__option'
                 >
-                  Create "{query}"
+                  Create '{query}'
                 </Combobox.Option>
               ) : (
                 // Display the filtered manufacturers as options
